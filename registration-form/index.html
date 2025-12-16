@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form action="#">
+        <!-- First Name -->
+        <label for="first-name">First Name *</label>
+        <input id="first-name" type="text" name="first-name" autocomplete="given-name" required>
+        <!-- Last Name -->
+        <label for="last-name">Last Name *</label>
+        <input id="last-name" type="text" name="last-name" autocomplete="family-name" required>
+        <!-- Email -->
+        <label for="email">Email *</label>
+        <input id="email" type="email" name="email" autocomplete="email" required>
+        <!-- Password -->
+        <label for="password">Password *</label>
+        <small>(At least 8 characters, including uppercase, lowercase, and a number)</small>
+        <input id="password" type="password" name="password" autocomplete="new-password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <!-- Confirm Password -->
+        <label for="confirm-password">Confirm Password *</label>
+        <input id="confirm-password" type="password" name="confirm-password" autocomplete="new-password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date" name="dob">
+        <!-- Gender -->
+        <fieldset>
+          <legend>Gender</legend>
+          <div>
+            <div>
+              <input id="male" type="radio" name="gender" value="male">
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input id="female" type="radio" name="gender" value="female">
+              <label for="female">Female</label>
+            </div>
+            <div>
+              <input id="other" type="radio" name="gender" value="other">
+              <label for="other">Other</label>
+            </div>
+          </div>
+        </fieldset>
+        <!-- Profession -->
+        <label for="profession">Profession</label>
+        <select id="profession" name="profession">
+          <option value="" disabled selected>Choose your profession</option>
+          <option value="data-analytics">Data Analytics</option>
+          <option value="web-development">Web Development</option>
+          <option value="ui-ux-design">UI/UX Design</option>
+          <option value="other">Other</option>
+        </select>
+        <!-- About Me -->
+        <label for="about-me">About Me</label>
+        <textarea id="about-me" name="about-me" rows="4"></textarea>
+        <!-- Submit Button -->
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+  </body>
+</html>
