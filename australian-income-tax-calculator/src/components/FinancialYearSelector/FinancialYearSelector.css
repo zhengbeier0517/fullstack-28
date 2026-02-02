@@ -1,0 +1,16 @@
+.financial-year-selector {
+  margin-bottom: 24px;
+}
+
+.financial-year-selector-title {
+  margin: 0 0 12px;
+  color: #364153;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.financial-year-selector-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

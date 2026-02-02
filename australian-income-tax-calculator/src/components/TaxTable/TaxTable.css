@@ -1,0 +1,31 @@
+.tax-table h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #101828;
+}
+
+.tax-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tax-table table thead tr {
+  border-bottom: 2px solid #ebe6e7;
+}
+
+.tax-table table thead th {
+  padding: 12px 8px;
+  text-align: left;
+  color: #364153;
+}
+
+.tax-table table tbody tr {
+  border-bottom: 1px solid #f6f3f4;
+}
+
+.tax-table table tbody td {
+  padding: 12px 8px;
+  text-align: left;
+  color: #4a5565;
+}

@@ -1,0 +1,33 @@
+.btn {
+  padding: 8px 24px;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary {
+  background-color: #4f39f6;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #f6f3f4;
+  color: #364153;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background-color: #ebe6e7;
+}
+
+.btn-success {
+  width: 100%;
+  background-color: #4f39f6;
+  color: #fff;
+}
+.btn-success:hover {
+  background-color: #432dd7;
+}
